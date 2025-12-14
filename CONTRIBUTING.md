@@ -5,6 +5,9 @@ This document provides the necessary instructions for setting up, developing, an
 ## Initial Setup
 
 ```bash
+# Install project
+git clone git@github.com:mr4torr/delirium-ui.git
+
 # Install dependencies
 bun install
 ```
@@ -119,6 +122,7 @@ bun run publish:all
   - `variations/` - Theme variants
   - `scopes/` - Scope definitions for syntax highlighting
 - `themes/` - Generated theme JSON files
+- `themes-custom/` - Generated custom theme JSON files
 - `releases/` - Release notes and VSIX packages
 - `assets/` - Images and graphical resources
 

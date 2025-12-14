@@ -22,11 +22,11 @@ const levels: ThemeLevels = {
 };
 
 export const jetbrainLight: Theme = {
+  colors,
+  levels,
   ui: makeMainColorsLight({
     base: '#f7f7f7',
     primary: colors.greenAlt,
     foreground: '#444b61',
   }),
-  colors,
-  levels,
 }

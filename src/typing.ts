@@ -1,4 +1,8 @@
 /**
+ * Ref: https://code.visualstudio.com/api/references/theme-color
+ */
+
+/**
  * Represents colors for Activity Bar & Action Bar
  */
 export type ActivityBarColors = {
@@ -88,13 +92,20 @@ export type ChartColors = {
  * Represents colors for Chat
  */
 export type ChatColors = {
+  "chat.requestBorder"?: string;
+  "chat.requestBackground"?: string;
+  "chat.slashCommandBackground"?: string;
+  "chat.slashCommandForeground"?: string;
   "chat.avatarBackground"?: string;
   "chat.avatarForeground"?: string;
   "chat.editedFileForeground"?: string;
-  "chat.requestBackground"?: string;
-  "chat.requestBorder"?: string;
-  "chat.slashCommandBackground"?: string;
-  "chat.slashCommandForeground"?: string;
+  "chat.linesAddedForeground"?: string;
+  "chat.linesRemovedForeground"?: string;
+  "chat.requestCodeBorder"?: string;
+  "chat.requestBubbleBackground"?: string;
+  "chat.requestBubbleHoverBackground"?: string;
+  "chat.checkpointSeparator"?: string;
+  "chatManagement.sashBorder"?: string;
 };
 
 /**
@@ -234,6 +245,7 @@ export type DropdownColors = {
  */
 export type EditorColors = {
   "editor.background"?: string;
+  
   "editor.compositionBorder"?: string;
   "editor.findMatchBackground"?: string;
   "editor.findMatchBorder"?: string;

@@ -2,8 +2,9 @@
   "name": "delirium-ui",
   "displayName": "Delirium UI",
   "description": "Color themes for VSCode and derivative versions of VSCode, inspired by Beautiful UI.",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "publisher": "mr4torr",
+  "license": "MIT",
   "author": "Mailon Torres",
   "icon": "images/icon.png",
   "engines": {
@@ -12,6 +13,10 @@
   "categories": [
     "Themes"
   ],
+  "galleryBanner": {
+    "color": "#252433",
+    "theme": "dark"
+  },
   "homepage": "https://github.com/mr4torr/delirium-ui",
   "repository": {
     "url": "https://github.com/mr4torr/delirium-ui",
@@ -101,6 +106,11 @@
         "path": "./themes/delirium-theme-everforest-darken.json"
       },
       {
+        "label": "Delirium Everforest Lilac",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-lilac.json"
+      },
+      {
         "label": "Delirium Aquarelle Cymbidium",
         "uiTheme": "vs-dark",
         "path": "./themes/delirium-theme-aquarelle-cymbidium.json"
@@ -114,6 +124,11 @@
         "label": "Delirium Aquarelle Lilac",
         "uiTheme": "vs-dark",
         "path": "./themes/delirium-theme-aquarelle-lilac.json"
+      },
+      {
+        "label": "Delirium Aquarelle Swamp",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-aquarelle-swamp.json"
       }
     ]
   }

@@ -3,17 +3,20 @@ import {
   aquarelleCymbidium,
   aquarelleHydrangea,
   aquarelleLilac,
-} from "./variations/aquarelle";
-import { dark, darken } from "./variations/dark";
-import { jetbrainLight } from "./variations/jetbrain";
-import { light } from "./variations/light";
-
+  aquarelleSwamp,
+} from "./variations/aquarelle-dark";
+import { everForestDark, everForestDarken, everForestLilac } from "./variations/everforest-dark";
+import { jetbrainLight } from "./variations/jetbrain-light";
+import { everForestLight } from "./variations/everforest-light";
 
 makeTheme("jetbrain-light", jetbrainLight, { light: true });
-makeTheme("everforest-light", light, { light: true });
-makeTheme("everforest-dark", dark);
-makeTheme("everforest-darken", darken);
+
+makeTheme("everforest-light", everForestLight, { light: true });
+makeTheme("everforest-dark", everForestDark);
+makeTheme("everforest-darken", everForestDarken);
+makeTheme("everforest-lilac", everForestLilac);
 
 makeTheme("aquarelle-cymbidium", aquarelleCymbidium);
 makeTheme("aquarelle-hydrangea", aquarelleHydrangea);
 makeTheme("aquarelle-lilac", aquarelleLilac);
+makeTheme("aquarelle-swamp", aquarelleSwamp);

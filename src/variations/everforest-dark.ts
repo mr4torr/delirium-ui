@@ -21,15 +21,25 @@ const levels: ThemeLevels = {
   warning: "#dbbc7f",
 };
 
-export const dark: Theme = {
+export const everForestDark: Theme = {
   colors,
   levels,
   ui: makeMainColorsDark({ base: "#282829", primary: "#a7c080", foreground: "#d3c6aa"}),
 };
 
-export const darken: Theme = {
+export const everForestDarken: Theme = {
   colors,
   levels,
   ui: makeMainColorsDark({ base: "#181819", primary: "#a7c080", foreground: "#d3c6aa"}),
+};
+
+export const everForestLilac: Theme = {
+  colors: {
+    ...colors,
+    orange: '#e1d7c3',
+    salmon: "#e1d7c3",
+  },
+  levels,
+  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", foreground: "#ede7da", editorForeground: "#e1d7c3"}),
 };
 

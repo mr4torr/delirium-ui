@@ -24,17 +24,25 @@ const levels: ThemeLevels = {
 export const aquarelleCymbidium: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#2c2525", primary: "#da6e6c", editorForeground: "#eecac9" }),
+  ui: makeMainColorsDark({ base: "#2c2525", primary: "#da6e6c", foreground: "#eecac9" }),
 };
 
 export const aquarelleHydrangea: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#22273c", primary: "#6394f1", editorForeground: "#cedaf0" }),
+  // ui: makeMainColorsDark({ base: "#22273c", primary: "#6394f1", foreground: "#cedaf0" }),
+  ui: makeMainColorsDark({ base: "#22273c", primary: "#6394f1", foreground: "#cedaf0" }),
 };
 
 export const aquarelleLilac: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", editorForeground: "#d4d0ef" }),
+  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", foreground: "#d4d0ef" }),
+};
+
+
+export const aquarelleSwamp: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({ base: "#282829", primary: "#4d8d85", foreground: "#ede7da", editorForeground: "#e1d7c3" }),
 };

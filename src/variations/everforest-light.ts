@@ -2,16 +2,16 @@ import { makeMainColorsLight } from "../helper";
 import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
-  blue: "#6a8149ff",
-  green: "#538d61ff",
-  greenAlt: "#4d8d85ff",
-  orange: "#a79672ff",
-  pink: "#b49557ff",
-  purple: "#5a9f6bff",
-  red: "#ac6587ff", 
-  salmon: "#ad9c79ff",
-  turquoize: "#9a5b3eff",
-  yellow: "#b95456ff",
+  blue: "#6a8149",
+  green: "#538d61",
+  greenAlt: "#4d8d85",
+  orange: "#a79672",
+  pink: "#b49557",
+  purple: "#5a9f6b",
+  red: "#ac6587", 
+  salmon: "#444b61",
+  turquoize: "#DB704B",
+  yellow: "#b95456",
 
 };
 
@@ -22,7 +22,7 @@ const levels: ThemeLevels = {
   warning: "#dbbc7f",
 };
 
-export const light: Theme = {
+export const everForestLight: Theme = {
   ui: makeMainColorsLight({
     base: '#FFFFFF',
     primary: colors.greenAlt,

@@ -6,6 +6,7 @@ import type {
   BreadcrumbColors,
   ButtonColors,
   ChartColors,
+  ChatColors,
   CheckboxColors,
   CommandCenterColors,
   DebugColors,
@@ -329,7 +330,8 @@ export default function ui(
     "editorBracketMatch.background": createSelectionColor(1),
     "editorBracketMatch.border": createSelectionColor(1.5),
     "editorCodeLens.foreground": c(theme.ui.defaultMain).alpha(0.5).toHex(),
-    "editorCursor.background": light ? theme.ui.uibackground : theme.ui.uibackgroundalt,
+    // "editorCursor.background": light ? theme.ui.uibackground : theme.ui.uibackgroundalt,
+    "editorCursor.background": c(theme.ui.primary).isDark() ? c(theme.ui.primary).lighten(0.5).toHex() : c(theme.ui.primary).darken(0.5).toHex(),
     "editorCursor.foreground": theme.ui.primary,
     "editorError.border": transparent,
     "editorError.foreground": theme.levels.danger,
@@ -445,14 +447,14 @@ export default function ui(
 
   const extensionButtonColors: ExtensionColors = {
     "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
-    "extensionButton.foreground": light
+"extensionButton.foreground": light
       ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
     "extensionButton.prominentBackground": c(theme.ui.primary)
       .alpha(0.616)
       .toHex(),
-    "extensionButton.prominentForeground": theme.ui.default,
+    // "extensionButton.prominentForeground": "#CC0000",
     "extensionButton.prominentHoverBackground": theme.ui.primary,
   };
 
@@ -505,6 +507,9 @@ export default function ui(
     "inlineChatInput.focusBorder": light
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
+  };
+
+  const chatColors: ChatColors = {
   };
 
   /**
@@ -648,17 +653,13 @@ export default function ui(
     "menu.background": theme.ui.primaryalt,
     "menu.border": theme.ui.border,
     "menu.foreground": theme.ui.foreground,
-    // "menu.foreground": light
-    //   ? theme.ui.defaultMain
-    //   : c(theme.ui.primaryalt).lighten(0.5).desaturate(0.1).toHex(),
-    // "menu.selectionForeground": theme.ui.primary,
-    "menu.selectionBackground": light ? c(theme.ui.uibackground).darken(0.07).toHex() : c(theme.ui.uibackground).lighten(0.07).toHex(),
-    // "menu.selectionForeground": light
-    //   ? theme.ui.defaultMain
-    //   : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
+    "menu.selectionBackground": light ? theme.ui.uibackgroundalt : c(theme.ui.uibackground).lighten(0.07).toHex(),
+    "menu.selectionForeground": light
+      ? c(theme.ui.foreground).darken(0.2).toHex()
+      : c(theme.ui.foreground).lighten(0.1).toHex(),
     "menu.separatorBackground": c(theme.ui.border).alpha(0.5).toHex(),
     "menubar.selectionBackground": light ? c(theme.ui.uibackground).darken(0.07).toHex() : c(theme.ui.uibackground).lighten(0.07).toHex(),
-    // "menubar.selectionForeground": theme.ui.default,
+    "menubar.selectionForeground": theme.ui.foreground,
   };
   const mergeColors: MergeColors = {
     "merge.border": theme.ui.border,
@@ -921,9 +922,9 @@ export default function ui(
     "textBlockQuote.border": c(theme.levels.info).alpha(0.725).toHex(),
     "textCodeBlock.background": c(theme.levels.info).alpha(0.2).toHex(),
     "textLink.activeForeground": getPrimaryOrInfo(theme.ui.primary),
-    "textLink.foreground": getPrimaryOrInfo(theme.ui.primary),
+    "textLink.foreground": theme.ui.primary,
     "textPreformat.background": light
-      ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.5).toHex()
+      ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.8).toHex()
       : c(theme.ui.primary).mix(theme.ui.uibackground, 0.8).toHex(),
     "textPreformat.foreground": light
       ? c(theme.ui.primary).darken(0.3).toHex()
@@ -994,6 +995,7 @@ export default function ui(
     ...multiDiffEditorColors,
     ...scmGraphColors,
     ...inlineChatColors,
+    ...chatColors,
     ...inlineEditColors,
     ...inputColors,
     ...keybindingLabelColors,
