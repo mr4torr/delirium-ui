@@ -20,3 +20,13 @@ No new features or improvements in this release.
 
 No bug fixes in this release.
 
+## 1.0.2 - 2025-12-14
+
+### Features and Improvements
+
+- Adiciona novas imagens de temas.
+- Adiciona diversos exemplos de código, um novo arquivo de release e atualiza metadados e dependências do projeto.
+
+### Bug Fixes
+
+No bug fixes in this release.
