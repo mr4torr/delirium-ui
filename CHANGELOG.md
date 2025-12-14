@@ -42,3 +42,15 @@ No bug fixes in this release.
 ### Bug Fixes
 
 No bug fixes in this release.
+
+## 2.0.1 - 2025-12-14
+
+### Features and Improvements
+
+- Adds new themes and refactors the theme variation structure, updating types and documentation.
+- Add new theme images..
+- Adds the Everforest Lilac and Aquarelle Swamp themes, and updates the image and link structure in the README.
+
+### Bug Fixes
+
+No bug fixes in this release.

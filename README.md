@@ -11,7 +11,7 @@
 ### Delirium Everforest Dark
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-dark.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-everforest-dark.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-dark.png" />
 	</a>
 </p>
@@ -19,15 +19,23 @@
 ### Delirium Everforest Darken
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-darken.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-everforest-darken.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-darken.png" />
+	</a>
+</p>
+
+### Delirium Everforest Lilac
+
+<p align="center">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-everforest-lilac.png">
+		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-lilac.png" />
 	</a>
 </p>
 
 ### Delirium Aquarelle Cymbidium
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-cymbidium.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-aquarelle-cymbidium.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-cymbidium.png" />
 	</a>
 </p>
@@ -35,7 +43,7 @@
 ### Delirium Aquarelle Hydrangea
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-hydrangea.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-aquarelle-hydrangea.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-hydrangea.png" />
 	</a>
 </p>
@@ -43,8 +51,17 @@
 ### Delirium Aquarelle Lilac
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-lilac.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-aquarelle-lilac.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-lilac.png" />
+	</a>
+</p>
+
+
+### Delirium Aquarelle Swamp
+
+<p align="center">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-aquarelle-swamp.png">
+		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-aquarelle-swamp.png" />
 	</a>
 </p>
 
@@ -53,7 +70,7 @@
 ### Delirium Light
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-light-theme.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-light-theme.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-light-theme.png" />
 	</a>
 </p>
@@ -61,7 +78,7 @@
 ### Delirium Light Alternative
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-light-alternative-theme.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-light-alternative-theme.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-light-alternative-theme.png" />
 	</a>
 </p>
@@ -69,7 +86,7 @@
 ### Delirium Jetbrain Light
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-jetbrain-light.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-jetbrain-light.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-jetbrain-light.png" />
 	</a>
 </p>
@@ -77,7 +94,7 @@
 ### Delirium Everforest Light
 
 <p align="center">
-	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-light.png">
+	<a href="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/large/delirium-theme-everforest-light.png">
 		<img src="https://raw.githubusercontent.com/mr4torr/delirium-ui/main/images/delirium-theme-everforest-light.png" />
 	</a>
 </p>
