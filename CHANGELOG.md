@@ -30,3 +30,15 @@ No bug fixes in this release.
 ### Bug Fixes
 
 No bug fixes in this release.
+
+## 2.0.0 - 2025-12-14
+
+### Features and Improvements
+
+- Adds new themes and refactors the theme variation structure, updating types and documentation.
+- Adds new theme images.
+- Adds several code examples, a new release file, and updates project metadata and dependencies.
+
+### Bug Fixes
+
+No bug fixes in this release.
