@@ -1,0 +1,116 @@
+{
+  "name": "delirium-ui",
+  "displayName": "Delirium UI",
+  "description": "Color themes for VSCode and derivative versions of VSCode, inspired by Beautiful UI.",
+  "version": "1.0.0",
+  "publisher": "mr4torr",
+  "author": "Mailon Torres",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "homepage": "https://github.com/mr4torr/delirium-ui",
+  "repository": {
+    "url": "https://github.com/mr4torr/delirium-ui",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/mr4torr/delirium-ui/issues"
+  },
+  "keywords": [
+    "theme",
+    "theme dark",
+    "theme light",
+    "theme darken",
+    "aquarelle",
+    "new ui",
+    "light",
+    "dark",
+    "darken",
+    "aquarelle dark",
+    "new ui light"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
+    "@typescript-eslint/parser": "^8.49.0",
+    "@vscode/vsce": "^3.7.1",
+    "colord": "^2.9.3",
+    "eslint": "^9.39.2",
+    "eslint-plugin-perfectionist": "^4.15.1",
+    "ovsx": "^0.10.7",
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3",
+    "@types/node": "^25.0.1"
+  },
+  "scripts": {
+    "build": "bun src/index.ts",
+    "build:ext": "vsce package --out ./releases/$npm_package_version.vsix",
+    "build:env": "tsc load-env.ts --esModuleInterop",
+    "dev": "bun --watch src/index.ts --watch src/scopes/*.ts --watch src/variations/*.ts",
+    "fix": "prettier --write ./src/**/*.ts && eslint src/**/*.{vue,ts} --fix",
+    "release": "gh release create v$npm_package_version --notes-file ./releases/$npm_package_version.md --generate-notes",
+    "create:release-notes": "bun src/create-release-notes.ts",
+    "publish:vscode": "bash -c \"read -p 'Enter your VS Code Marketplace token: ' TOKEN && vsce publish --packagePath ./releases/$npm_package_version.vsix -p $TOKEN\"",
+    "publish:ovsx": "bash -c \"read -p 'Enter your OVSX token: ' TOKEN && ovsx publish ./releases/$npm_package_version.vsix -p $TOKEN\"",
+    "publish:all": "bun run build:ext && bun run publish:vscode && bun run publish:ovsx"
+  },
+  "__metadata": {
+    "id": "95a8bb99-f404-4839-9a1d-051435ff409b",
+    "publisherId": "4b45e659-1a35-4124-9ef5-9cb09e99738a",
+    "publisherDisplayName": "Delirium"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Delirium Light Alternative",
+        "uiTheme": "vs",
+        "path": "./themes-custom/delirium-light-alternative-theme.json"
+      },
+      {
+        "label": "Delirium Light",
+        "uiTheme": "vs",
+        "path": "./themes-custom/delirium-light-theme.json"
+      },
+      {
+        "label": "Delirium Everforest Light",
+        "uiTheme": "vs",
+        "path": "./themes/delirium-theme-everforest-light.json"
+      },
+      {
+        "label": "Delirium Jetbrain Light",
+        "uiTheme": "vs",
+        "path": "./themes/delirium-theme-jetbrain-light.json"
+      },
+      {
+        "label": "Delirium Everforest Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-dark.json"
+      },
+      {
+        "label": "Delirium Everforest Darken",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-darken.json"
+      },
+      {
+        "label": "Delirium Aquarelle Cymbidium",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-aquarelle-cymbidium.json"
+      },
+      {
+        "label": "Delirium Aquarelle Hydrangea",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-aquarelle-hydrangea.json"
+      },
+      {
+        "label": "Delirium Aquarelle Lilac",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-aquarelle-lilac.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+import { makeMainColorsDark } from "../helper";
+import { Theme, ThemeColors, ThemeLevels } from "../typing";
+
+const colors: ThemeColors = {
+  blue: "#afd9ec",
+  green: "#c3e5a1",
+  greenAlt: "#bcb1f1",
+  orange: "#f0bba2",
+  pink: "#edc1ea",
+  purple: "#bcb1f1",
+  red: "#eca099",
+  salmon: "#f3aabc",
+  turquoize: "#a9edd9",
+  yellow: "#f3e1ac",
+};
+
+const levels: ThemeLevels = {
+  danger: "#e87a70",
+  info: "#73bee9",
+  success: "#aada77",
+  warning: "#eea064",
+};
+
+export const aquarelleCymbidium: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({ base: "#2c2525", primary: "#da6e6c", editorForeground: "#eecac9" }),
+};
+
+export const aquarelleHydrangea: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({ base: "#22273c", primary: "#6394f1", editorForeground: "#cedaf0" }),
+};
+
+export const aquarelleLilac: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", editorForeground: "#d4d0ef" }),
+};
