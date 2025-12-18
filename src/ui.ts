@@ -77,12 +77,12 @@ export default function ui(
   function createSelectionColor(delta: number): string {
     return untindedSelection
       ? c(theme.ui.uibackground)
-          .lighten(0.3 * delta)
-          .alpha(0.5)
-          .toHex()
+        .lighten(0.3 * delta)
+        .alpha(0.5)
+        .toHex()
       : c(theme.ui.primary)
-          .alpha(0.3 * delta)
-          .toHex();
+        .alpha(0.3 * delta)
+        .toHex();
   }
 
   function inputBackground(): string {
@@ -124,7 +124,7 @@ export default function ui(
       ? c(theme.ui.uibackground).darken(0.2).toHex()
       : c(theme.ui.uibackground).lighten(0.2).toHex(),
     foreground: theme.ui.defaultMain,
-    "icon.foreground": c(theme.ui.defaultMain).alpha(0.67).toHex(),
+    "icon.foreground": c(theme.ui.defaultMain).alpha(0.3).toHex(),
     "selection.background": c(theme.ui.primary).alpha(0.38).toHex(),
   };
 
@@ -352,10 +352,10 @@ export default function ui(
     "editorHoverWidget.border": theme.ui.border,
     "editorIndentGuide.activeBackground1": hc
       ? c(theme.ui.editorForeground).alpha(0.5).toHex()
-      : c(theme.ui.editorForeground).alpha(0.4).toHex(),
+      : c(theme.ui.editorForeground).alpha(0.2).toHex(),
     "editorIndentGuide.background1": hc
       ? c(theme.ui.editorForeground).alpha(0.4).toHex()
-      : c(theme.ui.editorForeground).alpha(0.1).toHex(),
+      : c(theme.ui.editorForeground).alpha(0.05).toHex(),
     "editorInfo.border": transparent,
     "editorInlayHint.background": c(theme.ui.defaultMain).alpha(0.1).toHex(),
     "editorInlayHint.foreground": c(theme.ui.defaultMain).alpha(0.7).toHex(),
@@ -408,7 +408,10 @@ export default function ui(
       .alpha(0.5)
       .toHex(),
     "editorOverviewRuler.warningForeground": theme.levels.warning,
-    "editorRuler.foreground": c(theme.ui.defaultalt).alpha(0.2).toHex(),
+    "editorRuler.foreground": hc
+      ? c(theme.ui.editorForeground).alpha(0.2).toHex()
+      : c(theme.ui.editorForeground).alpha(0.05).toHex(),
+
     "editorStickyScroll.shadow": shadow,
     "editorStickyScrollHover.background": c(theme.ui.uibackground)
       .lighten(0.03)
@@ -447,7 +450,7 @@ export default function ui(
 
   const extensionButtonColors: ExtensionColors = {
     "extensionButton.background": c(theme.ui.primary).alpha(0.5).toHex(),
-"extensionButton.foreground": light
+    "extensionButton.foreground": light
       ? c(theme.ui.primary).darken(0.5).toHex()
       : c(theme.ui.primary).lighten(0.22).toHex(),
     "extensionButton.hoverBackground": c(theme.ui.primary).alpha(0.6).toHex(),
@@ -461,7 +464,7 @@ export default function ui(
   const gitDecorationColors: GitColors = {
     "gitDecoration.conflictingResourceForeground": theme.ui.primary,
     "gitDecoration.deletedResourceForeground": theme.levels.danger,
-    "gitDecoration.ignoredResourceForeground": theme.ui.defaultalt,
+    "gitDecoration.ignoredResourceForeground": c(theme.ui.defaultalt).alpha(0.3).toHex(),
     "gitDecoration.modifiedResourceForeground": theme.levels.info,
     "gitDecoration.untrackedResourceForeground": theme.levels.success,
   };
@@ -629,12 +632,15 @@ export default function ui(
 
   const listColors: ListColors = {
     "list.activeSelectionBackground": light
-      ? c(theme.ui.defaultalt).alpha(0.2).toHex()
-      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.45).toHex(),
+      ? c(theme.ui.primary).alpha(0.1).toHex()
+      : c(theme.ui.primary).alpha(0.2).toHex(),
+    "list.activeSelectionForeground": theme.ui.default,
     "list.dropBackground": c(theme.ui.primary).alpha(0.082).toHex(),
     "list.errorForeground": theme.levels.danger,
     "list.focusBackground": c(theme.ui.primary).alpha(0.25).toHex(),
     "list.focusForeground": theme.ui.defaultMain,
+    "list.focusAndSelectionOutline": c(theme.ui.primary).alpha(0.9).toHex(),
+    "list.focusOutline": c(theme.ui.primary).alpha(0.9).toHex(),
     "list.highlightForeground": theme.ui.primary,
     "list.hoverBackground": light
       ? c(theme.ui.defaultalt).alpha(0.1).toHex()
@@ -643,10 +649,10 @@ export default function ui(
       ? c(theme.ui.defaultalt).darken(0.8).toHex()
       : c(theme.ui.primaryalt).lighten(0.8).desaturate(0.1).toHex(),
     "list.inactiveSelectionBackground": light
-      ? c(theme.ui.defaultalt).alpha(0.12).toHex()
-      : c(theme.ui.primaryalt).lighten(0.1).alpha(0.25).toHex(),
+      ? c(theme.ui.primary).darken(0.1).alpha(0.05).toHex()
+      : c(theme.ui.primary).lighten(0.1).alpha(0.05).toHex(),
     "list.inactiveSelectionForeground": theme.ui.default,
-    "list.warningForeground": theme.levels.warning,
+    "list.warningForeground": theme.levels.warning
   };
 
   const menuColors: MenuColors = {
@@ -717,8 +723,10 @@ export default function ui(
     "panelSectionHeader.border": theme.ui.border,
     "panelSectionHeader.foreground": theme.ui.default,
     "panelTitle.activeBorder": theme.ui.primary,
-    "panelTitle.activeForeground": theme.ui.primary,
-    "panelTitle.inactiveForeground": theme.ui.defaultalt,
+    "panelTitle.activeForeground": theme.ui.foreground,
+    "panelTitle.inactiveForeground": c(theme.ui.foreground)
+      .mix(theme.ui.uibackgroundmid, 0.3)
+      .toHex(),
   };
 
   const peekViewColors: PeekViewColors = {
@@ -933,9 +941,9 @@ export default function ui(
   };
 
   const titleBarBackground = theme.ui.uibackgroundalt;
-//   const titleBarBackground = light
-//     ? c(theme.ui.uibackgroundalt).darken(0.1).toHex()
-//     : c(theme.ui.uibackgroundalt).darken(0.03).toHex();
+  //   const titleBarBackground = light
+  //     ? c(theme.ui.uibackgroundalt).darken(0.1).toHex()
+  //     : c(theme.ui.uibackgroundalt).darken(0.03).toHex();
   const titleBarColors: TitleBarColors = {
     "titleBar.activeBackground": titleBarBackground,
     "titleBar.activeForeground": light
@@ -950,11 +958,15 @@ export default function ui(
 
   const toolbarColors: ToolbarColors = {
     "toolbar.activeBackground": c(theme.ui.defaultalt).alpha(0.5).toHex(),
-    "toolbar.hoverBackground": c(theme.ui.defaultalt).alpha(0.3).toHex(),
+    "toolbar.hoverBackground": light
+      ? c(theme.ui.uibackgroundmid).darken(0.05).toHex()
+      : c(theme.ui.uibackgroundmid).lighten(0.05).toHex(),
   };
 
   const treeColors: TreeColors = {
-    "tree.indentGuidesStroke": c(theme.ui.defaultalt).alpha(0.439).toHex(),
+    "tree.indentGuidesStroke": hc
+      ? c(theme.ui.editorForeground).alpha(0.4).toHex()
+      : c(theme.ui.editorForeground).alpha(0.2).toHex(),
   };
 
   const walkThroughColors: WalkThroughColors = {

@@ -245,7 +245,7 @@ export type DropdownColors = {
  */
 export type EditorColors = {
   "editor.background"?: string;
-  
+
   "editor.compositionBorder"?: string;
   "editor.findMatchBackground"?: string;
   "editor.findMatchBorder"?: string;

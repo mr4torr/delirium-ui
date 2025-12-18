@@ -55,18 +55,18 @@ export function makeMainColorsDark({
   const darkenColor: string = c(base).darken(0.022).toHex();
   const sat = 0.01;
 
-  let _foreground =  c(foreground ?? base);
-  if(!foreground) {
+  let _foreground = c(foreground ?? base);
+  if (!foreground) {
     _foreground = fontTeinted ? _foreground.lighten(0.6) : _foreground.lighten(0.7);
   }
 
-  let _foregroundAlt =  c(foregroundAlt ?? _foreground);
-  if(!foregroundAlt) {
+  let _foregroundAlt = c(foregroundAlt ?? _foreground);
+  if (!foregroundAlt) {
     _foregroundAlt = fontTeinted ? _foregroundAlt.lighten(0.15) : _foregroundAlt.lighten(0.25);
   }
 
   return {
-    border: c(base).lighten(0.06).toHex(),
+    border: c(base).lighten(0.03).toHex(),
     // Fonts
     default: fontTeinted
       ? _foreground.saturate(0.15).toHex()
@@ -75,8 +75,8 @@ export function makeMainColorsDark({
       ? _foregroundAlt.saturate(0.05).toHex()
       : _foregroundAlt.desaturate(sat).toHex(),
     defaultMain: fontTeinted
-      ? c(base).lighten(0.55).saturate(0.07).toHex()
-      : c(base).lighten(0.6).desaturate(sat).toHex(),
+      ? _foreground.saturate(0.07).toHex()
+      : _foreground.desaturate(sat).toHex(),
     // UI
     primary,
     primaryalt: primaryAlt ? primaryAlt : c(base).lighten(0.05).toHex(),
@@ -108,13 +108,13 @@ export function makeMainColorsLight({
   const borderColor: string = c(base).darken(0.08).toHex();
   const fontColor: string = c(primary).darken(0.1).toHex();
 
-  let _foreground =  c(foreground ?? base);
-  if(!foreground) {
+  let _foreground = c(foreground ?? base);
+  if (!foreground) {
     _foreground = desaturated ? _foreground.darken(0.4) : _foreground.darken(0.3);
   }
 
-  let _foregroundAlt =  c(foregroundAlt ?? base);
-  if(!foregroundAlt) {
+  let _foregroundAlt = c(foregroundAlt ?? base);
+  if (!foregroundAlt) {
     _foregroundAlt = desaturated ? _foregroundAlt.lighten(0.3) : _foregroundAlt.lighten(0.15);
   }
 

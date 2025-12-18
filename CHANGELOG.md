@@ -54,3 +54,13 @@ No bug fixes in this release.
 ### Bug Fixes
 
 No bug fixes in this release.
+
+## 2.1.1 - 2025-12-18
+
+### Features and Improvements
+
+- Adiciona novos temas e refatora a estrutura de variações de tema, atualizando a versão e o `.vscodeignore`.
+
+### Bug Fixes
+
+No bug fixes in this release.

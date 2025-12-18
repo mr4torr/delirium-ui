@@ -8,11 +8,10 @@ const colors: ThemeColors = {
   orange: "#a79672",
   pink: "#b49557",
   purple: "#5a9f6b",
-  red: "#ac6587", 
+  red: "#ac6587",
   salmon: "#444b61",
   turquoize: "#DB704B",
   yellow: "#b95456",
-
 };
 
 const levels: ThemeLevels = {

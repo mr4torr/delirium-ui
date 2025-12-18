@@ -8,7 +8,7 @@ const colors: ThemeColors = {
   orange: "#d3c6aa",
   pink: "#dbbc7f",
   purple: "#83c092",
-  red: "#d699b6", 
+  red: "#d699b6",
   salmon: "#d3c6aa",
   turquoize: "#e69875",
   yellow: "#e67e80",
@@ -21,16 +21,17 @@ const levels: ThemeLevels = {
   warning: "#dbbc7f",
 };
 
+
 export const everForestDark: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#282829", primary: "#a7c080", foreground: "#d3c6aa"}),
+  ui: makeMainColorsDark({ base: "#282829", primary: "#a7c080", foreground: "#d3c6aa" }),
 };
 
 export const everForestDarken: Theme = {
   colors,
   levels,
-  ui: makeMainColorsDark({ base: "#181819", primary: "#a7c080", foreground: "#d3c6aa"}),
+  ui: makeMainColorsDark({ base: "#181819", primary: "#a7c080", foreground: "#d3c6aa" }),
 };
 
 export const everForestLilac: Theme = {
@@ -40,6 +41,6 @@ export const everForestLilac: Theme = {
     salmon: "#e1d7c3",
   },
   levels,
-  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", foreground: "#ede7da", editorForeground: "#e1d7c3"}),
+  ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", foreground: "#ede7da", editorForeground: "#e1d7c3" }),
 };
 
