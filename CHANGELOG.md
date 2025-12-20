@@ -64,3 +64,14 @@ No bug fixes in this release.
 ### Bug Fixes
 
 No bug fixes in this release.
+
+## 2.1.2 - 2025-12-20
+
+### Features and Improvements
+
+- Release of version 2.1.1, adding and updating core themes for the interface.
+
+### Bug Fixes
+
+No bug fixes in this release.
+

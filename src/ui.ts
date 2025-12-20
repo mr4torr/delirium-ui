@@ -88,16 +88,16 @@ export default function ui(
   function inputBackground(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).lighten(0.01).toHex()
-        : c(theme.ui.uibackground).lighten(0.02).toHex()
+        ? c(theme.ui.uibackground).darken(0.01).toHex()
+        : c(theme.ui.uibackground).darken(0.02).toHex()
       : c(theme.ui.uibackground).lighten(0.025).toHex();
   }
 
   function inputBorder(): string {
     return light
       ? desaturateInputs
-        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.25).toHex()
-        : c(theme.ui.uibackground).darken(0.2).toHex()
+        ? c(theme.ui.uibackground).desaturate(0.5).darken(0.2).toHex()
+        : c(theme.ui.uibackground).darken(0.1).toHex()
       : c(theme.ui.uibackground).desaturate(0.05).lighten(0.15).toHex();
   }
 
@@ -876,9 +876,6 @@ export default function ui(
 
   const tabColors: TabColors = {
     "tab.activeBackground": theme.ui.uibackground,
-    // "tab.activeBackground": hc
-    //   ? c(theme.ui.primary).mix(theme.ui.uibackground, 0.9).toHex()
-    //   : theme.ui.uibackground,
     "tab.activeBorder": theme.ui.uibackground,
     "tab.hoverForeground": theme.ui.foreground,
     "tab.activeBorderTop": theme.ui.primary,
@@ -890,10 +887,12 @@ export default function ui(
       .mix(theme.ui.uibackground, 0.3)
       .toHex(),
     "tab.lastPinnedBorder": theme.ui.border,
-    "tab.unfocusedActiveBorder": theme.ui.uibackground,
-    "tab.unfocusedActiveForeground": theme.ui.primary,
-    "tab.unfocusedHoverBackground": theme.ui.uibackground,
-    "tab.unfocusedInactiveForeground": theme.ui.defaultalt,
+    // "tab.unfocusedActiveBorder": theme.ui.uibackground,
+    // "tab.unfocusedActiveForeground": theme.ui.primary,
+    // "tab.unfocusedHoverBackground": theme.ui.uibackground,
+    // "tab.unfocusedInactiveForeground": c(theme.ui.foreground)
+    //   .mix(theme.ui.uibackground, 0.3)
+    //   .toHex(),
   };
 
   const terminalColors: TerminalColors = {
@@ -985,6 +984,7 @@ export default function ui(
 
   const widgetColors: WidgetColors = {
     "widget.shadow": widgetShadow,
+    "widget.border": inputBorder(),
   };
 
   // Combine all color groups
