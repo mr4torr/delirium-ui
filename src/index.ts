@@ -8,8 +8,12 @@ import {
 import { everForestDark, everForestDarken, everForestLilac } from "./variations/everforest-dark";
 import { jetbrainLight } from "./variations/jetbrain-light";
 import { everForestLight } from "./variations/everforest-light";
+import { jetbrainPumpkinDark } from "./variations/jetbrain-pumpkin-dark";
+import { jetbrainDark } from "./variations/jetbrain-dark";
 
 makeTheme("jetbrain-light", jetbrainLight, { light: true });
+makeTheme("jetbrain-dark", jetbrainDark);
+makeTheme("jetbrain-pumpkin-dark", jetbrainPumpkinDark);
 
 makeTheme("everforest-light", everForestLight, { light: true });
 makeTheme("everforest-dark", everForestDark);

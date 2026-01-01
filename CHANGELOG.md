@@ -75,3 +75,13 @@ No bug fixes in this release.
 
 No bug fixes in this release.
 
+## 2.2.0 - 2026-01-01
+
+### Features and Improvements
+
+- Atualiza temas e prepara o lançamento da versão 2.2.0.
+
+### Bug Fixes
+
+No bug fixes in this release.
+

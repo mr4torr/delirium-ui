@@ -10,6 +10,7 @@ const colors: ThemeColors = {
   purple: "#6B2FBA",
   red: "#AA3731",
   salmon: "#444b61", // #5f5faf alternativa
+  // salmon: "#5f5faf", // #5f5faf alternativa
   turquoize: "#6B2FBA",
   yellow: "#0063d3",
 };
