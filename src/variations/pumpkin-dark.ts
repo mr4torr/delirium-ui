@@ -3,30 +3,29 @@ import { Theme, ThemeColors, ThemeLevels } from "../typing";
 
 const colors: ThemeColors = {
   blue: "#85ab86",
-  green: "#61bbac",
-  greenAlt: "#90a9db",
-  orange: "#b7967b",
-  pink: "#61bbac",
-  purple: "#69aa6a",
-  red: "#9ba1e2",
-  salmon: "#cfbc93",
+  green: "#7fbbb3",
+  greenAlt: "#83c092",
+  orange: "#cfbc93",
+  pink: "#d3c6aa",
+  purple: "#83c092",
+  red: "#e67e80",
+  salmon: "#d3c6aa",
   turquoize: "#e7a98c",
   yellow: "#f88d6f",
 };
 
 const levels: ThemeLevels = {
   danger: "#e67e80",
-  info: "#a7c080",
+  info: "#7fbbb3",
   success: "#83c092",
-  warning: "#dbbc7f",
+  warning: "#d3c6aa",
 };
 
-export const jetbrainPumpkinDark: Theme = {
+export const pumpkinDark: Theme = {
   colors,
   levels,
   ui: makeMainColorsDark({
     base: "#2b2d30",
-    // primary: "#0077ff",
     primary: "#f88d6f",
     foreground: "#bcbcb4"
   }),

@@ -2,7 +2,7 @@
   "name": "delirium-ui",
   "displayName": "Delirium UI",
   "description": "Color themes for VSCode and derivative versions of VSCode, inspired by Beautiful UI.",
-  "version": "2.2.0",
+  "version": "2.3.1",
   "publisher": "mr4torr",
   "license": "MIT",
   "author": "Mailon Torres",
@@ -76,16 +76,6 @@
   "contributes": {
     "themes": [
       {
-        "label": "Delirium Light Alternative Custom",
-        "uiTheme": "vs",
-        "path": "./themes-custom/delirium-light-alternative-theme.json"
-      },
-      {
-        "label": "Delirium Light Custom",
-        "uiTheme": "vs",
-        "path": "./themes-custom/delirium-light-theme.json"
-      },
-      {
         "label": "Delirium Everforest Light",
         "uiTheme": "vs",
         "path": "./themes/delirium-theme-everforest-light.json"
@@ -96,19 +86,14 @@
         "path": "./themes/delirium-theme-jetbrain-light.json"
       },
       {
-        "label": "Delirium Everforest Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/delirium-theme-everforest-dark.json"
+        "label": "Delirium Light Alternative Custom",
+        "uiTheme": "vs",
+        "path": "./themes-custom/delirium-light-alternative-theme.json"
       },
       {
-        "label": "Delirium Everforest Darken",
-        "uiTheme": "vs-dark",
-        "path": "./themes/delirium-theme-everforest-darken.json"
-      },
-      {
-        "label": "Delirium Everforest Lilac",
-        "uiTheme": "vs-dark",
-        "path": "./themes/delirium-theme-everforest-lilac.json"
+        "label": "Delirium Light Custom",
+        "uiTheme": "vs",
+        "path": "./themes-custom/delirium-light-theme.json"
       },
       {
         "label": "Delirium Aquarelle Cymbidium",
@@ -126,9 +111,34 @@
         "path": "./themes/delirium-theme-aquarelle-lilac.json"
       },
       {
+        "label": "Delirium Aquarelle Pumpkin",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-aquarelle-pumpkin.json"
+      },
+      {
         "label": "Delirium Aquarelle Swamp",
         "uiTheme": "vs-dark",
         "path": "./themes/delirium-theme-aquarelle-swamp.json"
+      },
+      {
+        "label": "Delirium Everforest Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-dark.json"
+      },
+      {
+        "label": "Delirium Everforest Darken",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-darken.json"
+      },
+      {
+        "label": "Delirium Everforest Lilac",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-lilac.json"
+      },
+      {
+        "label": "Delirium Everforest Pumpkin",
+        "uiTheme": "vs-dark",
+        "path": "./themes/delirium-theme-everforest-pumpkin.json"
       },
       {
         "label": "Delirium Jetbrain Dark",
@@ -136,9 +146,9 @@
         "path": "./themes/delirium-theme-jetbrain-dark.json"
       },
       {
-        "label": "Delirium Jetbrain Pumpkin",
+        "label": "Delirium Pumpkin",
         "uiTheme": "vs-dark",
-        "path": "./themes/delirium-theme-jetbrain-pumpkin-dark.json"
+        "path": "./themes/delirium-theme-pumpkin-dark.json"
       }
     ]
   }

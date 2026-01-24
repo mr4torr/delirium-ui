@@ -46,3 +46,9 @@ export const aquarelleSwamp: Theme = {
   levels,
   ui: makeMainColorsDark({ base: "#282829", primary: "#4d8d85", foreground: "#ede7da", editorForeground: "#e1d7c3" }),
 };
+
+export const aquarellePumpkin: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({ base: "#2b2d30", primary: "#f88d6f", foreground: "#bcbcb4" }),
+};

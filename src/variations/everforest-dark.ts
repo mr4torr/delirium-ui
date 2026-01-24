@@ -44,3 +44,13 @@ export const everForestLilac: Theme = {
   ui: makeMainColorsDark({ base: "#252433", primary: "#9587ff", foreground: "#ede7da", editorForeground: "#e1d7c3" }),
 };
 
+
+export const everForestPumpkin: Theme = {
+  colors,
+  levels,
+  ui: makeMainColorsDark({
+    base: "#2b2d30",
+    primary: "#f88d6f",
+    foreground: "#bcbcb4"
+  }),
+};

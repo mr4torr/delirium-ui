@@ -85,3 +85,18 @@ No bug fixes in this release.
 
 No bug fixes in this release.
 
+## 2.3.0 - 2026-01-22
+
+### Features and Improvements
+
+No new features or improvements in this release.
+
+### Bug Fixes
+
+No bug fixes in this release.
+
+## 2.3.1 - 2026-01-24
+
+### Initial Release
+
+- Initial release of Delirium UI
